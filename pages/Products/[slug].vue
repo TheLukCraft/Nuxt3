@@ -8,6 +8,10 @@
 
 <script setup>
 const { slug } = useRoute().params
+
+definePageMeta({
+    layout: 'products'
+})
 </script>
 
 <style scoped></style>
