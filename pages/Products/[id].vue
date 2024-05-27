@@ -1,5 +1,10 @@
 <template>
     <div>
+
+        <Head>
+            <Title>TheLukCraft | {{ product.title }}</Title>
+        </Head>
+        <Meta name="description" :content="product.description" />
         <productDetails :product="product" />
     </div>
 </template>

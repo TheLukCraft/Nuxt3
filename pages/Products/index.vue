@@ -9,10 +9,17 @@
 </template>
 
 <script setup>
+definePageMeta({
+    layout: 'products'
+})
+
 // fetch the products
 const { data: products } = await useFetch('https://fakestoreapi.com/products')
 
-definePageMeta({
-    layout: 'products'
+useHead({
+    title: 'TheLukCraft | Merch',
+    meta: [
+        { name: 'description', content: 'TheLukCraft Merch' }
+    ]
 })
 </script>
