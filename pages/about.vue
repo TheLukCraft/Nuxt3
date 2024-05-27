@@ -6,11 +6,12 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi atque possimus molestias recusandae magni quia
             odit! Molestiae numquam deserunt quisquam, animi sunt ipsum, velit, magni reiciendis reprehenderit
             perferendis beatae atque!</p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+const { data } = await useFetch('/api/shop')
 </script>
 
 <style lang="scss" scoped>
