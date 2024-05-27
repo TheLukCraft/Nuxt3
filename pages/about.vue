@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-const { data } = await useFetch('/api/shop')
+const { data } = await useFetch('/api/currency/PLN')
 </script>
 
 <style lang="scss" scoped>
